@@ -421,8 +421,10 @@ class Hangouts(Parser):
                 float(event["timestamp"]) / 1000000)
             if event["event_type"] == "REGULAR_CHAT_MESSAGE":
                 if "segment" in event["chat_message"]["message_content"]:
-                    message = " ".join(p["text"] for p in event["chat_message"][
-                        "message_content"]["segment"] if "text" in p)
+                    message = " ".join(p["text"]
+                                       for p in event["chat_message"]
+                                       ["message_content"]["segment"]
+                                       if "text" in p)
                     messages.append({
                         'timestamp': date.isoformat(),
                         'contact': sender,

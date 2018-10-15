@@ -1,6 +1,8 @@
 IM Logs processing
 =============
 
+[![Build Status](https://travis-ci.org/mtlynch/Log.svg?branch=master)](https://travis-ci.org/mtlynch/Log)
+
 For the past three years, I have backed up all my IM logs. At the time, I didn't
 really know why. I thought that maybe one day I would want to read something
 again. Well, my logs have 150Mb now and I probably won't be reading through it
